@@ -170,31 +170,30 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-  let computerString;
-  if(computer > 0.666){
-    computerString = "Paper";
-  } else if(computer < 0.333){
-    computerString = "Rock";
-  } else{
-    computerString = "Scissors";
-  }
-  
-  if (user == computerString){
+  if (user == computer){
     return "it's a tie";
-  } else if(user == "Scissors" && computerString == "Paper"){
+  } else if(user == "scissors" && computer == "paper"){
     return "you win!"; 
-  } else if(user == "Paper" && computerString == "Rock"){
+  } else if(user == "paper" && computer == "rock"){
     return "you win!";
-  } else if(user == "Rock" && computerString == "Scissors"){
+  } else if(user == "rock" && computer == "scissors"){
     return "you win!";
   } else {
     return "you lose!";
   }
 }
 
-const computerChoice = Math.random()
+const random = Math.random()
+let computerString;
+if(random > 0.666){
+  computerString = "Paper";
+} else if(random < 0.333){
+  computerString = "Rock";
+} else{
+  computerString = "Scissors";
+}
 const userChoice = "Paper"
-console.log(game(userChoice,computerChoice))
+console.log(game(userChoice,computerString))
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -267,17 +266,17 @@ function grade(score){
     if(score >= 90){
       return 'you got an A'
     }else if(score >= 80){
-      return 'you got an B'
+      return 'you got a B'
     }else if(score >= 70){
-      return 'you got an C'
+      return 'you got a C'
     }else if(score >= 60){
-      return 'you got an D'
+      return 'you got a D'
     }else{
       return 'you got an F'
     }
   }
   
-  console.log(grade(50))
+  console.log(grade(80))
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -292,8 +291,8 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(text) {
+   let count
 }
 
 
