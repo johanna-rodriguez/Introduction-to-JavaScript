@@ -241,10 +241,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(number){
+    const count = number - 1;
+    const textResponse = (number + " bottles of soda on the wall, " + number + " bottles of soda, take one down pass it around " + count + " bottles of soda on the wall");
+    return textResponse;
   }
-
+console.log(annoyingSong(10))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
