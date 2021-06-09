@@ -19,9 +19,9 @@ Do the following:
 */
 let votingAge = 12
 if (votingAge >= 18){
-  console.log(true)
+  console.log(true);
 }else{
-  console.log(false)
+  console.log(false);
 }
 
 
@@ -41,7 +41,7 @@ let variableB = 45
 
 if (variableA != variableB){
   variableA = variableB
-  console.log("New value of the 1st variable: " + variableA)
+  console.log("New value of the 1st variable: " + variableA);
 }
 
 
@@ -58,7 +58,7 @@ Do the following:
 */
 
 let year = "1999"
-console.log(parseInt(year))
+console.log(parseInt(year));
 
 
 
@@ -193,7 +193,7 @@ if(random > 0.666){
   computerString = "Scissors";
 }
 const userChoice = "Paper"
-console.log(game(userChoice,computerString))
+console.log(game(userChoice,computerString));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -209,7 +209,7 @@ Using the miles function below do the following:
 
 function miles(distance){
     const convertion = distance * 0.621371
-    return convertion
+    return convertion;
   }
 
 console.log(miles(10) + " miles")
@@ -224,10 +224,10 @@ Using the feet function below do the following:
 
 function feet(cm){
     const convertion = cm / 30.48
-    return convertion
+    return convertion;
   }
  
-  console.log(feet(100) + " feets")
+  console.log(feet(100) + " feets");
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -245,7 +245,7 @@ function annoyingSong(number){
     const textResponse = (number + " bottles of soda on the wall, " + number + " bottles of soda, take one down pass it around " + count + " bottles of soda on the wall");
     return textResponse;
   }
-console.log(annoyingSong(10))
+console.log(annoyingSong(10));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -264,15 +264,15 @@ Using the grade function below do the following:
   
 function grade(score){
     if(score >= 90){
-      return 'you got an A'
+      return 'you got an A';
     }else if(score >= 80){
-      return 'you got a B'
+      return 'you got a B';
     }else if(score >= 70){
-      return 'you got a C'
+      return 'you got a C';
     }else if(score >= 60){
-      return 'you got a D'
+      return 'you got a D';
     }else{
-      return 'you got an F'
+      return 'you got an F';
     }
   }
   
@@ -292,7 +292,6 @@ Using the vowelCounter function below do the following:
 
 
 function vowelCounter(text) {
-   let count
 }
 
 
