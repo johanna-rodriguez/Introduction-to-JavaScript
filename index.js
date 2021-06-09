@@ -17,7 +17,12 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge = 12
+if (votingAge >= 18){
+  console.log(true)
+}else{
+  console.log(false)
+}
 
 
 /*
@@ -31,7 +36,13 @@ Do the following:
    HINT: no function required
 */
 
+let variableA = 12
+let variableB = 45
 
+if (variableA != variableB){
+  variableA = variableB
+  console.log("New value of the 1st variable: " + variableA)
+}
 
 
 
@@ -46,6 +57,8 @@ Do the following:
    HINT: look up the Number method
 */
 
+let year = "1999"
+console.log(parseInt(year))
 
 
 
@@ -58,10 +71,13 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    let c;
+    c = a * b;
+    return c;
   }
 
+  console.log(multiply(20, 25));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -74,11 +90,12 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+  let result = 7 * age;
+    return  result;
 }
 
-
+console.log(dogYears(10))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -153,9 +170,31 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
-}
+  let computerString;
+  if(computer > 0.666){
+    computerString = "Paper";
+  } else if(computer < 0.333){
+    computerString = "Rock";
+  } else{
+    computerString = "Scissors";
+  }
   
+  if (user == computerString){
+    return "it's a tie";
+  } else if(user == "Scissors" && computerString == "Paper"){
+    return "you win!"; 
+  } else if(user == "Paper" && computerString == "Rock"){
+    return "you win!";
+  } else if(user == "Rock" && computerString == "Scissors"){
+    return "you win!";
+  } else {
+    return "you lose!";
+  }
+}
+
+const computerChoice = Math.random()
+const userChoice = "Paper"
+console.log(game(userChoice,computerChoice))
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
